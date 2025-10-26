@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jastech Infosys Pvt. Ltd.</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo-2.png" alt="Jastech-logo" class="logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Jastech Infosys Pvt. Ltd.</h1>
+      <h2>WE PROVIDE. <span id="typewriter"></span></h2>
+      <a href="services.html" class="glass-btn"><span>Learn More</span></a>
+    </div>
+    <div class="hero-illustration glass-box">
+      <div class="model-cropper">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.86/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/dzY4lw6xI7tG6bJL/scene.splinecode"></spline-viewer>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="card">
+        <h3>Software Tools</h3>
+        <p>Cutting-edge software for productivity and automation.</p>
+        <a href="software-tools.html" class="glass-btn"><span>Explore</span></a>
+      </div>
+      <div class="card">
+        <h3>Hardware Systems</h3>
+        <p>Robust hardware solutions for enterprises.</p>
+        <a href="hardware-systems.html" class="glass-btn"><span>Explore</span></a>
+      </div>
+      <div class="card">
+        <h3>Automation Kits</h3>
+        <p>Pre-built kits for AI and robotics automation.</p>
+        <a href="automation-kits.html" class="glass-btn"><span>Explore</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Custom Software Development</h3>
+        <p>Tailored solutions for your business.</p>
+        <a href="custom-software.html" class="glass-btn"><span>Explore</span></a>
+      </div>
+      <div class="card">
+        <h3>AI & Automation Solutions</h3>
+        <p>Integrate AI and automation into workflows.</p>
+        <a href="ai-automation.html" class="glass-btn"><span>Explore</span></a>
+      </div>
+      <div class="card">
+        <h3>Web & App Development</h3>
+        <p>Responsive web & mobile applications.</p>
+        <a href="web-app.html" class="glass-btn"><span>Explore</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="clients">
+    <h2>Our Clients</h2>
+    <div class="carousel-container">
+      <div class="carousel-track" id="track">
+        <div class="card"><img src="https://i.pravatar.cc/150?img=1">
+          <h3>Client 1</h3>
+          <p>Tech Solutions</p>
+        </div>
+        <div class="card"><img src="https://i.pravatar.cc/150?img=2">
+          <h3>Client 2</h3>
+          <p>AI Innovators</p>
+        </div>
+        <div class="card"><img src="https://i.pravatar.cc/150?img=3">
+          <h3>Client 3</h3>
+          <p>Web Corp</p>
+        </div>
+        <div class="card"><img src="https://i.pravatar.cc/150?img=4">
+          <h3>Client 4</h3>
+          <p>Data Masters</p>
+        </div>
+        <div class="card"><img src="https://i.pravatar.cc/150?img=5">
+          <h3>Client 5</h3>
+          <p>Smart Systems</p>
+        </div>
+        <div class="card"><img src="https://i.pravatar.cc/150?img=6">
+          <h3>Client 6</h3>
+          <p>Design Labs</p>
+        </div>
+      </div>
+      <button class="button prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="button next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <section id="contact" class="contact glass-box">
+    <h2>Contact Us / Enquiry</h2>
+    <form>
+      <div class="input-group">
+        <input type="text" id="name" placeholder=" " required>
+        <label for="name">Your Name</label>
+      </div>
+      <div class="input-group">
+        <input type="email" id="email" placeholder=" " required>
+        <label for="email">Your Email</label>
+      </div>
+      <div class="input-group">
+        <textarea id="message" rows="4" placeholder=" " required></textarea>
+        <label for="message">Your Message</label>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+
+  <footer>
+    <p>© 2025 Jastech Infosys Pvt. Ltd.</p>
+  </footer>
+
+  <!-- Chatbot Button -->
+  <button class="chatbot-btn" id="chat-btn">💬</button>
+
+  <!-- Chatbot Panel -->
+  <div class="chatbot" id="chatbot">
+    <div class="chatbot-header">Chat with Us</div>
+    <div class="chatbot-body" id="chat-body"></div>
+    <div class="chatbot-footer">
+      <input type="text" id="chat-input" placeholder="Type a message..." />
+      <button id="chat-send">Send</button>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
